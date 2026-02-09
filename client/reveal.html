@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Behavioral Risk Insights</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#111827,#020617);
+  font-family:Segoe UI,system-ui;
+  color:#e5e7eb;
+}
+
+.container{
+  max-width:900px;
+  margin:60px auto;
+  padding:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:18px;
+  padding:28px;
+  margin-bottom:25px;
+}
+
+h1{text-align:center;margin-bottom:8px;}
+.subtitle{text-align:center;color:#9ca3af;margin-bottom:40px;}
+
+.btn{
+  display:block;
+  margin:30px auto 0;
+  padding:14px 34px;
+  border-radius:14px;
+  border:none;
+  background:#4f7cff;
+  color:#fff;
+  cursor:pointer;
+}
+
+.highlight{color:#ef4444;font-weight:600;}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Behavioral Risk Analysis</h1>
+<p class="subtitle">Executive summary of user decisions</p>
+
+<div class="card" id="summary"></div>
+
+<button class="btn" onclick="go()">View Executive Dashboard</button>
+
+</div>
+
+<script>
+const actions = JSON.parse(sessionStorage.getItem("actions")) || [];
+
+const explanations = {
+  clicked_urgency_warning:"Urgency-based messaging triggered immediate action, a common social engineering technique.",
+  clicked_short_link:"Unverified links increase exposure to phishing and redirection attacks.",
+  accepted_all_cookies:"Allowing unrestricted tracking enables long-term behavioral profiling.",
+  persistent_session:"Extended sessions increase impact of account compromise.",
+  saved_payment_info:"Storing sensitive data increases blast radius of a breach."
+};
+
+let text;
+
+if(actions.length===0){
+  text = "No risky behavioral patterns were observed. The user demonstrated strong security awareness.";
+}else{
+  text = "The most significant risk emerged from <span class='highlight'>"+
+    actions[actions.length-1].replace(/_/g," ") +
+    "</span>. This behavior is frequently exploited by attackers to bypass rational decision-making.";
+}
+
+document.getElementById("summary").innerHTML = text;
+
+function go(){
+  window.location.href="summary.html";
+}
+</script>
+
+</body>
+</html>

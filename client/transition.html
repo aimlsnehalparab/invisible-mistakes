@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Analyzing Your Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #111827, #020617);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: #e5e7eb;
+    }
+
+    .box {
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .loader {
+      width: 70px;
+      height: 70px;
+      border: 6px solid rgba(255,255,255,0.1);
+      border-top: 6px solid #4f7cff;
+      border-radius: 50%;
+      margin: 0 auto 25px;
+      animation: spin 1s linear infinite;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <div class="loader"></div>
+  <h2>Analyzing Your Activity</h2>
+  <p>Understanding invisible risks behind your actions…</p>
+</div>
+
+<script>
+  setTimeout(() => {
+    window.location.href = "reveal.html";
+  }, 3000);
+</script>
+
+</body>
+</html>
