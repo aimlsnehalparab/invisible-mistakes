@@ -1,51 +1,106 @@
-# Invisible Mistakes: What You Expose Without Knowing
+# Invisible Mistakes: Behavioral Cybersecurity Awareness Platform
 
-An interactive **Behavioral Cybersecurity Awareness Platform** that demonstrates how *normal-looking user actions* on websites can silently increase security risk — **without collecting any real personal data**.
+An interactive cybersecurity awareness platform that demonstrates how normal-looking user actions can silently increase security risk — without collecting any real personal data.
 
-This project focuses on **human behavior and decision-making**, not technical hacking.
-
----
-
-## Problem Statement
-
-Most users trust websites blindly and interact with common UI elements such as:
-- “Allow location”
-- “Accept all cookies”
-- “Stay logged in”
-- Urgency warnings
-- Free downloads
-- Social proof (“Trusted by thousands”)
-
-While these actions feel harmless, they can **enable profiling, social engineering, and exploitation** in real-world systems.
-
-**The problem:**  
-Users are often unaware of the *invisible risks* created by their own behavior.
+This project focuses on human behavior, decision-making patterns, and risk psychology in digital environments.
 
 ---
 
-## Project Objective
+## 🔎 Problem Statement
 
-The objective of this project is to:
-- Simulate realistic website interactions
-- Observe **user behavioral choices**
-- Analyze how these choices contribute to security risk
-- Present results using an **Executive-Style Risk Dashboard**
-- Educate users through awareness, not fear or surveillance
+Users frequently interact with websites without understanding the security implications of their actions.
 
----
+Common examples:
+- Clicking "Allow Location"
+- Accepting all cookies
+- Staying logged in on shared devices
+- Trusting urgency-based warnings
+- Downloading free content without verification
+- Trusting social proof blindly
 
-## What This Project Does NOT Do
+These behaviors can enable profiling, social engineering, account compromise, and targeted attacks.
 
-- Does NOT collect real user data  
-- Does NOT access browser history  
-- Does NOT track real location  
-- Does NOT spy on the device  
-- Does NOT store uploaded files  
-
-All analysis is **simulated and client-side only**, based purely on user interactions within the website.
+Most users do not recognize the invisible risks created by their own digital decisions.
 
 ---
 
-## System Overview
+## 🎯 Project Objective
 
-### User Flow
+The goal of this project is to:
+
+- Simulate realistic website interaction scenarios
+- Track behavioral choices in a controlled environment
+- Assign dynamic risk scores based on user actions
+- Visualize behavioral risk through an executive-style dashboard
+- Promote cybersecurity awareness through interactive education
+
+---
+
+## 🛡️ Ethical & Privacy Commitment
+
+This platform:
+
+- Does NOT collect real personal data
+- Does NOT access real browser history
+- Does NOT track real geolocation
+- Does NOT store uploaded files
+- Does NOT monitor outside the simulation
+
+All analysis is simulated and runs entirely client-side.
+
+This is an awareness tool — not a tracking system.
+
+---
+
+## 🧠 Core Features
+
+- Behavioral interaction simulation
+- Risk scoring engine
+- Dynamic risk level classification
+- Visual analytics dashboard
+- Educational security insights
+- Executive-style risk summary
+
+---
+
+## 🏗️ Tech Stack
+
+Frontend:
+- HTML
+- CSS
+- JavaScript
+
+Conceptual Domains:
+- Behavioral Cybersecurity
+- Risk Modeling
+- Human-Centered Security
+- Awareness Engineering
+
+---
+
+## 📊 Use Case
+
+This platform can be used for:
+
+- Cybersecurity awareness training
+- Educational demonstrations
+- Security psychology research discussions
+- Student cybersecurity projects
+- Risk modeling experimentation
+
+---
+
+## 🚀 Future Enhancements
+
+- Admin analytics panel
+- Persistent risk reporting
+- User behavior pattern comparison
+- MITRE ATT&CK behavioral mapping
+- Expanded simulation scenarios
+
+---
+
+## 👤 Author
+
+Snehal Parab  
+Cybersecurity & Behavioral Risk Engineering Enthusiast
